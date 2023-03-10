@@ -1,0 +1,3 @@
+_base:
+  - swin5-l148_conv.yaml
+  - nnunet-norm.yaml

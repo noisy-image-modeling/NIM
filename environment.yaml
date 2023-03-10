@@ -1,0 +1,36 @@
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - ruamel.yaml
+  - hydra-core
+  - numpy
+  - einops
+  - pytorch::pytorch=1.13.1
+  - pytorch::torchvision=0.14.1
+  - pytorch::pytorch-cuda=11.7
+  - pytorch-lightning
+  - timm
+  - wandb
+  - scikit-learn
+  - pandas
+  - openpyxl
+  - matplotlib
+  - nibabel
+  - simpleitk
+  - more-itertools
+
+  - pip
+  - pip:
+    - itk
+    - evalutils
+    - torchmetrics
+    - transformers
+    - mmcv-full
+    - mmsegmentation
+    - cytoolz
+#    - git+https://github.com/JoHof/lungmask
+    - -e third-party/MONAI
+    - -e third-party/nnUNet
